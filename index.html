@@ -10,13 +10,18 @@
 
     body{
         font-family: 'Gill Sans MT';
-        background-image: url('https://obmontessori.orangeapps.ph/landing/obmontessori/images/FV%20Facade.jpg');
+        font-size: large;
+        background-image: url('Background.png');
         background-repeat: no-repeat;
         background-size: cover;
         }
 
     nav{
         font-size: large;
+    }
+
+    h3{
+        font-weight: bold;
     }
 
 </style>
@@ -34,14 +39,7 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#Home">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#About">Academic Programs</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#Campus">Campuses</a>
-        </li>
+          <a class="nav-link" href="#">Enroll Now</a>
       </ul>
       <form class="d-flex">
         <button class="btn btn-primary" type="button" style="font-size: large;">My Portal</button>
@@ -53,15 +51,132 @@
 <br>
 
 <div class="container">
-    <div class="row justify-content-center" style="column-gap: none;">
+    <div class="row justify-content-center" style="column-gap: 3px;">
         <div class="col-lg-1">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="obmclogo" class="rounded-circle" style="height: 100px; width: 100px; object-fit: cover; border: 1px solid gray;">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="obmclogo" class="rounded-circle" style="height: 100px; width: 100px; object-fit: cover; border: 1px solid gray; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.663);">
         </div>
         <div class="col-lg-6 mt-4">
-            <h1 class="fw-bold" style="color: rgb(0, 0, 0); background-color: rgba(255, 255, 255, 0.374); text-shadow: 0px 2px 5px rgba(255, 255, 255, 0.621);">OBMC Student Enrollment Form</h1>
+            <h1 class="fw-bold text-light" style="text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.621);">OBMC Student Enrollment Form</h1>
         </div>
     </div>
 </div>
 
+<br>
+
+<h5 class="text-center text-light">Fill out the form below for the upcoming school year.</h5>
+
+<br>
+
+<div class="container rounded-2" style="padding: 30px; background-color: rgba(255, 255, 255, 0.592); margin: auto;">  
+    
+    <div class="row">
+        <h3>Student Information</h3>
+        <br><br>
+        <div class="col">
+            <label for="fname">First Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Juan" name="fname">
+        </div>
+        <div class="col">
+            <label for="lname">Last Name</label>
+            <input type="text" class="form-control" id="lname" placeholder="Dela Cruz" name="lname">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <div class="col">
+            <label for="bday">Birth Date</label>
+            <input type="date" class="form-control" id="bday" name="bday">
+        </div>
+        <div class="col">
+            <label for="gender">Gender</label>
+            <select class="form-select" id="gender" name="gender">
+                <option disabled selected hidden>Select</option>
+                <option>Male</option>
+                <option>Female</option>
+                <option>N/A</option>
+            </select>
+        </div>
+        <div class="col">
+            <label for="grade">Grade Level</label>
+            <select class="form-select" id="grade" name="grade">
+                <option disabled selected hidden>Select</option>
+                <option>Junior Casa</option>
+                <option>Advanced Casa</option>
+                <option>Grade 1</option>
+                <option>Grade 2</option>
+                <option>Grade 3</option>
+                <option>Grade 4</option>
+                <option>Grade 5</option>
+                <option>Grade 6</option>
+                <option>Grade 7</option>
+                <option>Grade 8</option>
+                <option>Grade 9</option>
+                <option>Grade 10</option>
+                <option>Grade 11</option>
+                <option>Grade 12</option>
+            </select>
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <h3>Contact Details</h3>
+        <br><br>
+        <div class="col">
+            <label for="email">Email Address</label>
+            <input type="email" class="form-control" id="email" placeholder="student@example.com" name="email">
+
+            <br>
+
+            <label for="contact">Contact Number</label>
+            <input type="text" class="form-control" id="contact" placeholder="0912-345-6789" name="contact">
+        </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+        <h3>Other Information</h3>
+        <br><br>
+        <div class="col">
+            <label class="form-check-label" for="learn">Mode of Learning</label>
+            <div class="form-check">
+                <input type="radio" id="online" name="learn" class="form-check-input">
+                <label class="form-check-label" for="online">Online</label>
+                <br>
+                <input type="radio" id="f2f" name="learn" class="form-check-input">
+                <label for="f2f">Face to Face</label>
+            </div>
+
+            <br>
+
+            <input type="checkbox" id="agree" name="agree" class="form-check-input">
+            <label class="form-check-label" for="agree">I confirm that the information provided is true and complete</label>
+        </div>
+    </div>
+
+    <br>
+
+    <form class="d-flex justify-content-center">
+        <button class="btn btn-primary" type="button" style="font-size: large;">Submit Enrollment</button>
+    </form>
+</div>
+
+<br>
+
+<div class="row justify-content-center">
+<p class="fs-5 text-center" style="color: white; background-color: rgb(32, 2, 72); max-width: 700px;">© 2026 Student Enrollment Page | Janna Patricia P. Planas | 9-Topaz</p>
+</div>
+
+<script
+src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>
+
+<!--References
+https://stackoverflow.com/questions/5805059/how-do-i-make-a-placeholder-for-a-select-box
+https://obmontessori.edu.ph/las-pinas-admissions
